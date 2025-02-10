@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body {
+    display: flex; /* O display flex é uma funcionalidade do CSS3 que permite organizar elementos em uma página da web de forma flexíve*/
+    justify-content: center; /* alinha os elementos horizontalmente ao centro de um contêiner flexíve */
+    align-items: center; /* alinhar os elementos flexíveis verticalmente e horizontalmente no centro de um elemento. */
+    min-height: 100vh; /* minimo de altura que vai ter é a tela toda (100vh seria a tela toda)*/
+    background-image: url(image/amazon-rainforest-wallpaper-4-e1468796536729.jpg);
+    background-size: cover; /* esticar a imagrm na tela toda*/
+    background-position: center; /* mantem a posição no centro*/
+}
+
+.container{
+    width: 450px;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, .2); 
+    border-radius: 10px; /* circulferencia da borda*/
+    color: white;
+    padding: 30px 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+    backdrop-filter: blur(5px); /* Torna fosco o container*/
+}
+
+.container h1{
+    font-size: 35px; /* Tamanho da fonte*/
+    text-align: center; /* Alinhando a fonte para o centro */
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+.input-box input{ /* Class input-box e o input que esta dentro dele*/
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, .2); 
+    border-radius: 40px;
+    outline: none; /* A linha quando clica na caixa para digitar*/
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: rgb(189, 189, 189);
+}
+
+.input-box i{
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 100%;
+    position: absolute; /* para posicionar em um ponto especifico*/
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Para posicionar no meio */
+    font-size: 20px; 
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between; /* joga um pra cada lado*/
+    margin: -15px 0 15px;
+}
+
+/*
+    margin e padding
+
+    1 valor - margin: 20px - todos os lados
+    2 valores - margin: 20px 30px - em cima e embaixo, dos lados
+    3 valores - padding: 20px 10px 40px - em cima, dos lados, embaixo
+    4 valores - padding: 20px 10px 40px 10px - em cima, lado direito, embaixo, lado esquerdo
+
+    sempre sentido horario
+*/
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.remember-forgot a{
+    text-decoration: none; /* Formata a fonte removendo toda decoração como sublinhado*/
+    color: white;
+}
+
+.remember-forgot a:hover{ /* Quando o mouse passar por cima*/
+    text-decoration: underline;
+}
+
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer; /* Serve para mudar o cursor do mouse para a mãozinha*/
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    margin-top: 20px;
+}
+
+.login:hover{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    color: white;
+    transition: 0.5s; /* Tempo para mudança de cor*/
+}
+
+.register-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
