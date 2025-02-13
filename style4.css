@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Libre Baskerville", serif;
+}
+
+body {
+    display: flex; /* O display flex é uma funcionalidade do CSS3 que permite organizar elementos em uma página da web de forma flexíve*/
+    justify-content: center; /* alinha os elementos horizontalmente ao centro de um contêiner flexíve */
+    align-items: center; /* alinhar os elementos flexíveis verticalmente e horizontalmente no centro de um elemento. */
+    min-height: 100vh; /* minimo de altura que vai ter é a tela toda (100vh seria a tela toda)*/
+    background-image: url(image/amazon-rainforest-wallpaper-4-e1468796536729.jpg);
+    background-size: cover; /* esticar a imagrm na tela toda*/
+    background-position: center; /* mantem a posição no centro*/
+}
